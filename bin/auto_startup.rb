@@ -35,7 +35,7 @@ def tweet(startup, thing)
 	"Like #{startup}, but for #{thing}"
 end
 
-loop do
+loop do |tweet|
 
 	puts tweet(startup.sample, thing.sample)
 
