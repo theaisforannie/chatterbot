@@ -36,13 +36,13 @@ def content(startup, thing)
 	"Like #{startup}, but for #{thing}"
 end
 
-loop do |tweet|
+# loop do |tweet|
 
 	tweet content(startup.sample, thing.sample)
 
-	sleep 60
+	# sleep 60
 
-end
+# end
 
 # search "keyword" do |tweet|
 #  reply "Hey #USER# nice to meet you!", tweet
