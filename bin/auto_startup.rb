@@ -31,13 +31,13 @@ exclude "hi", "spammer", "junk"
 startup = YAML.load_file("startups.yml")
 thing = YAML.load_file("things.yml")
 
-def tweet(startup, thing)
+def content(startup, thing)
 	"Like #{startup}, but for #{thing}"
 end
 
 loop do |tweet|
 
-	puts tweet(startup.sample, thing.sample)
+	tweet content(startup.sample, thing.sample)
 
 	sleep 60
 
