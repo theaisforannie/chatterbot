@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'chatterbot/dsl'
+require 'psych'
 
 #
 # this is the script for the twitter bot auto_startup
@@ -28,8 +29,8 @@ blacklist "abc", "def"
 # here's a list of things to exclude from searches
 exclude "hi", "spammer", "junk"
 
-startup = YAML.load_file("startups.yml")
-thing = YAML.load_file("things.yml")
+startup = YAML.load_file("bin/startups.yml")
+thing = YAML.load_file("bin/things.yml")
 
 def content(startup, thing)
 	"Like #{startup}, but for #{thing}"
