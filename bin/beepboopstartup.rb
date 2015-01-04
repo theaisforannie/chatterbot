@@ -38,7 +38,9 @@ end
 
 # loop do |tweet|
 
+if rand < 0.33
 	tweet content(startup.sample, thing.sample)
+end
 
 	# update_config
 
