@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'chatterbot/dsl'
+require 'yaml'
 
 #
 # this is the script for the twitter bot %{name}

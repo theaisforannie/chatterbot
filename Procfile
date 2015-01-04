@@ -1,0 +1,1 @@
+worker: ruby ~/Documents/coding/chatterbot/bin/auto_startup.rb
