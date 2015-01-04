@@ -9,11 +9,11 @@ require 'psych'
 # generated on 2014-12-30 10:16:50 -0800
 #
 
-consumer_key '57KnppBuiD5F1f1hCxC9PmSqb'
-consumer_secret 'H6NkCZ1NzEn28pmHhK2Gp4EfAFPwe3AAOzeDTseKxlLIJxsY15'
+consumer_key ENV['CONSUMER_KEY']
+consumer_secret ENV['CONSUMER_SECRET']
 
-secret '1K6XiPNoNMjBY81rOy8wsbL935QDwpa4oP2XpKIGRhbjP'
-token '2945345922-ZVk4FwbTDtno3wj3YjSyagnNMvsbKapsFebVnWe'
+secret ENV['SECRET']
+token ENV['TOKEN']
 
 # remove this to send out tweets
 # debug_mode
