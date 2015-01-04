@@ -38,11 +38,12 @@ end
 
 # loop do |tweet|
 
+random = rand
 if rand < 0.33
 	tweet content(startup.sample, thing.sample)
-	print "your tweet was a success! rand was #{rand}"
+	print "your tweet was a success! rand was #{random}"
 else
-	print "aw, not this time. rand was #{rand}"
+	print "aw, not this time. rand was #{random}"
 end
 
 	# update_config
