@@ -41,9 +41,9 @@ end
 random = rand
 if rand < 0.33
 	tweet content(startup.sample, thing.sample)
-	print "your tweet was a success! rand was #{random}"
+	puts "your tweet was a success! rand was #{random}\n"
 else
-	print "aw, not this time. rand was #{random}"
+	puts "aw, not this time. rand was #{random}\n"
 end
 
 	# update_config
