@@ -39,7 +39,7 @@ end
 # loop do |tweet|
 
 random = rand
-if rand < 0.33
+if random < 0.33
 	tweet content(startup.sample, thing.sample)
 	puts "your tweet was a success! rand was #{random}\n"
 else
