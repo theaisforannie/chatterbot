@@ -31,6 +31,7 @@ exclude "hi", "spammer", "junk"
 
 startup = YAML.load_file("bin/startups.yml")
 thing = YAML.load_file("bin/things.yml")
+sentences = YAML.load_file("bin/sentences.yml")
 
 def content(startup, thing)
 	"Like #{startup}, but for #{thing}"
@@ -46,9 +47,8 @@ else
 	puts "aw, not this time. rand was #{random}\n"
 end
 
-	# update_config
 
-# 	sleep 3600 # sleep 3 hours before looping again
+	# update_config
 
 # end
 
