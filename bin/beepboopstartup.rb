@@ -31,7 +31,6 @@ exclude "hi", "spammer", "junk"
 
 startup = YAML.load_file("bin/startups.yml")
 thing = YAML.load_file("bin/things.yml")
-sentences = YAML.load_file("bin/sentences.yml")
 
 def content(startup, thing)
 	"Like #{startup}, but for #{thing}"
@@ -40,8 +39,14 @@ end
 # loop do |tweet|
 
 random = rand
+thing_random = rand
 if random < 0.33
-	tweet content(startup.sample, thing.sample)
+	if thing_random < 0.33
+		obj_of_preposition = startup.sample
+	else
+		obj_of_preposition = thing.sample
+	end
+	tweet content(startup.sample, obj_of_preposition)
 	puts "your tweet was a success! rand was #{random}\n"
 else
 	puts "aw, not this time. rand was #{random}\n"
