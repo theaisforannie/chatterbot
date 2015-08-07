@@ -41,7 +41,7 @@ end
 random = rand
 thing_random = rand
 if random < 0.33
-	if thing_random < 0.33
+	if thing_random < 0.10
 		obj_of_preposition = startup.sample
 	else
 		obj_of_preposition = thing.sample
